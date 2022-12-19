@@ -1,0 +1,111 @@
+.cell {
+  border: 1px solid rgba(22, 22, 22, 0.07);
+}
+
+.wall,
+.path,
+.path-instant,
+.visited,
+.visited-instant {
+  border: none;
+}
+
+.wall {
+  background-color: #161616;
+  animation: zoom 350ms ease-out forwards;
+}
+
+.point {
+  position: relative;
+}
+
+#initial,
+#terminal {
+  position: absolute;
+  inset: 4px;
+  margin: auto;
+  border-radius: 50%;
+  border: 1px solid rgba(22, 22, 22, 0.5);
+  z-index: 2;
+  pointer-events: none;
+  animation: zoom 1s ease-out forwards;
+}
+
+#initial {
+  background-color: seagreen;
+}
+
+#terminal {
+  background-color: crimson;
+}
+
+@keyframes zoom {
+  0% {
+    scale: 0.3;
+  }
+
+  50% {
+    scale: 1.2;
+  }
+}
+
+.visited-instant {
+  background-color: cornflowerblue;
+}
+
+.visited {
+  animation: visit 500ms linear forwards;
+}
+
+@keyframes visit {
+  0% {
+    scale: 0.3;
+    background-color: darkslateblue;
+  }
+
+  40% {
+    background-color: #8758ff;
+  }
+
+  0%,
+  50% {
+    box-shadow: inset 0 0 0 1px #d9d9d9;
+  }
+
+  50%,
+  90% {
+    background-color: #22a39f;
+  }
+
+  100% {
+    background-color: cornflowerblue;
+  }
+}
+
+.path {
+  animation: path 300ms linear forwards;
+  z-index: 1;
+}
+
+@keyframes path {
+  0% {
+    background-color: tomato;
+  }
+
+  0%,
+  50% {
+    box-shadow: inset 0 0 0 1px #d9d9d9;
+  }
+
+  50% {
+    scale: 1.2;
+  }
+
+  100% {
+    background-color: goldenrod;
+  }
+}
+
+.path-instant {
+  background-color: goldenrod;
+}

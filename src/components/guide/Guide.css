@@ -1,0 +1,100 @@
+#guide {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  border-radius: 3px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#guide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #161616;
+  opacity: 0.7;
+}
+
+#guide-wrapper {
+  background-color: #d9d9d9;
+  height: fit-content;
+  width: min(40rem, 85vw);
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  padding: 0 1rem;
+  margin: 0;
+  border-radius: 3px;
+  border: 2px solid #161616;
+  box-shadow: 0 0 0 2px #d9d9d9;
+}
+
+#guide-wrapper h5,
+#guide-wrapper h6,
+#guide-wrapper p {
+  margin: 0;
+}
+
+#guide-wrapper li {
+  margin: 1rem;
+}
+
+#guide-wrapper h5 {
+  font-size: 1.3rem;
+}
+
+#guide-wrapper p {
+  color: rgba(16, 16, 16, 0.9);
+}
+
+.guide-list {
+  padding: 0;
+}
+
+.guide-list li {
+  padding: 0;
+}
+
+.guide-bullet,
+.guide-keyword,
+.guide-definition {
+  font-size: 0.9rem;
+}
+
+.guide-bullet {
+  display: inline-block;
+  padding-right: 5px;
+  font-weight: 500;
+}
+
+.guide-keyword {
+  font-weight: 600;
+}
+
+.guide-definition {
+  font-weight: 400;
+}
+
+.guide-icon {
+  translate: 0 20%;
+}
+
+.guide-icon.wall-icon {
+  border: none;
+}
+
+.guide-button {
+  padding: 0.3rem 1rem;
+  border-radius: 2px;
+  font-weight: 600;
+  margin-left: auto;
+  background-color: cornflowerblue;
+  color: #1c315e;
+}

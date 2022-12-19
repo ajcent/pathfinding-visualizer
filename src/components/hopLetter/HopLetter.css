@@ -1,0 +1,38 @@
+.hop-wrapper {
+  position: relative;
+  pointer-events: none;
+}
+
+.hop-letter {
+  position: relative;
+  display: inline-block;
+  animation: linear 400ms calc(var(--delay) * 100ms) forwards;
+}
+
+@keyframes hop-letter {
+  0% {
+    color: cornflowerblue;
+  }
+
+  33% {
+    translate: 0 -10%;
+  }
+
+  66% {
+    translate: 0 5%;
+  }
+
+  100% {
+    color: cornflowerblue;
+  }
+}
+
+@keyframes hop-letter-transparent {
+  33% {
+    translate: 0 -10%;
+  }
+
+  66% {
+    translate: 0 5%;
+  }
+}

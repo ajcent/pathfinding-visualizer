@@ -1,0 +1,46 @@
+.navbar-legend {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-legend > span:first-child {
+  color: #d9d9d9;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-right: 3px;
+}
+
+.icon {
+  display: inline-block;
+  height: 1rem;
+  aspect-ratio: 1;
+}
+
+.start-icon {
+  background-color: seagreen;
+  border-radius: 50%;
+  border: 1px solid rgba(22, 22, 22, 0.5);
+}
+
+.goal-icon {
+  background-color: crimson;
+  border-radius: 50%;
+  border: 1px solid rgba(22, 22, 22, 0.5);
+}
+
+.wall-icon {
+  background-color: #161616;
+  border: 1px solid #d9d9d9;
+}
+
+.visited-icon {
+  background-color: cornflowerblue;
+}
+
+.path-icon {
+  background-color: goldenrod;
+}

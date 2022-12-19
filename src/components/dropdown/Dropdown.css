@@ -1,0 +1,80 @@
+.dropdown {
+  padding: 0.4rem 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border: none;
+  color: #d9d9d9;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown:hover .hop-letter,
+.dropdown:focus .hop-letter {
+  animation-name: hop-letter;
+}
+
+.dropdown.keep .hop-letter {
+  color: cornflowerblue;
+}
+
+.dropdown:focus {
+  outline: none;
+}
+
+.dropdown-title {
+  pointer-events: none;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  translate: 0 100%;
+  width: 100%;
+  overflow: hidden;
+  animation: fade-in 200ms ease-out forwards;
+  border: 1px solid #d9d9d9;
+  background-color: #161616;
+  padding: 3px;
+  gap: 3px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+
+  100% {
+    bottom: -60%;
+    opacity: 1;
+  }
+}
+
+.dropdown-content button {
+  padding: 0.4em 0.8em;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 400;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  transition: background-color 100ms linear, color 100ms linear;
+}
+
+.dropdown-content button:hover,
+.dropdown-content button:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #d9d9d9;
+}
+
+.dropdown-content .active {
+  background-color: cornflowerblue;
+  color: #161616;
+}
+
+.dropdown-content button:focus {
+  outline: none;
+}

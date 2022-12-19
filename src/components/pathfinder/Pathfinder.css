@@ -1,0 +1,8 @@
+#pathfinder {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d8d9cf;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
