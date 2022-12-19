@@ -98,3 +98,23 @@
   background-color: cornflowerblue;
   color: #1c315e;
 }
+
+@media all and (max-width: 420px) {
+  #guide-wrapper h5 {
+    font-size: 1.1rem;
+  }
+
+  #guide-wrapper h5 + p {
+    font-size: 0.9rem;
+  }
+
+  .guide-bullet,
+  .guide-keyword,
+  .guide-definition {
+    font-size: 0.8rem;
+  }
+
+  .guide-button {
+    font-size: 0.8rem;
+  }
+}
