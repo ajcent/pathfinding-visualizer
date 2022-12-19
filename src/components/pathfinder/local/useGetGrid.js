@@ -1,4 +1,4 @@
-import { useCallback, useLayoutEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const normalizedValue = (value, size) => {
   const count = Math.trunc(value / size);
@@ -16,7 +16,7 @@ const getDimension = ({ scaleX, scaleY }) => {
   return { width: width * scaleX, height: height * scaleY };
 };
 
-export default function useCreateGrid(settings) {
+export default function useGetGrid(settings) {
   const { width, height } = getDimension(settings);
   const { size } = settings;
 
@@ -33,7 +33,7 @@ export default function useCreateGrid(settings) {
     }));
   }, [settings, size]);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [handleResize]);
