@@ -6,23 +6,23 @@ function useGridAnimation() {
   const { setCell, toggleClickable, clickable, toggleSolved, solved } =
     useContext(GridData);
 
-  useEffect(() => {
-    const clear = () => {
-      timeOutHistory.forEach((id) => clearTimeout(id));
-      setTimeOutHistory(() => []);
-      !clickable && toggleClickable();
-      solved && toggleSolved();
-    };
-    window.addEventListener("resize", clear);
-    return () => window.removeEventListener("resize", clear);
-  }, [
-    clickable,
-    toggleClickable,
-    setTimeOutHistory,
-    solved,
-    timeOutHistory,
-    toggleSolved,
-  ]);
+  // useEffect(() => {
+  //   const clear = () => {
+  //     timeOutHistory.forEach((id) => clearTimeout(id));
+  //     setTimeOutHistory(() => []);
+  //     !clickable && toggleClickable();
+  //     solved && toggleSolved();
+  //   };
+  //   window.addEventListener("resize", clear);
+  //   return () => window.removeEventListener("resize", clear);
+  // }, [
+  //   clickable,
+  //   toggleClickable,
+  //   setTimeOutHistory,
+  //   solved,
+  //   timeOutHistory,
+  //   toggleSolved,
+  // ]);
 
   const animateGrid = ({
     order,
