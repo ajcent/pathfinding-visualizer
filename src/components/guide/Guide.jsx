@@ -38,7 +38,8 @@ function Guide() {
             <span className='guide-bullet'>A.</span> Click the{" "}
             <span className='guide-icon icon start-icon'></span> start or the{" "}
             <span className='guide-icon icon goal-icon'></span> goal, then click
-            a different cell to change their position.
+            a different cell to change their position. Preferred on mobile
+            devices.
           </p>
           <p className='guide-definition'>
             <span className='guide-bullet'>B.</span> Left Click + Hold + Drag
