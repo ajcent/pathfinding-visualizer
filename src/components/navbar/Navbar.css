@@ -130,6 +130,7 @@
 
 @media all and (max-width: 850px) {
   .navbar-main {
+    background-color: rgba(22, 22, 22, 0.95);
     position: fixed;
     top: 50%;
     left: 50%;

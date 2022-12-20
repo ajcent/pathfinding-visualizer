@@ -6,7 +6,7 @@ button {
   color: #d9d9d9;
   letter-spacing: 1px;
   cursor: pointer;
-  background-color: #161616;
+  background-color: transparent;
 }
 
 button:focus {
