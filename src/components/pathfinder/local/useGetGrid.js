@@ -25,18 +25,18 @@ export default function useGetGrid(settings) {
     density: getDensity(width, height, size),
   });
 
-  const handleResize = useCallback(() => {
-    const { width, height } = getDimension(settings);
-    setGrid(() => ({
-      dimension: { width: width, height: height },
-      density: getDensity(width, height, size),
-    }));
-  }, [settings, size]);
+  // const handleResize = useCallback(() => {
+  //   const { width, height } = getDimension(settings);
+  //   setGrid(() => ({
+  //     dimension: { width: width, height: height },
+  //     density: getDensity(width, height, size),
+  //   }));
+  // }, [settings, size]);
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [handleResize]);
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, [handleResize]);
 
   return { ...grid };
 }
