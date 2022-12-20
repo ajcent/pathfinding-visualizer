@@ -40,7 +40,10 @@ function Navbar() {
           mobileNav ? " hide-mobile" : ""
         }`}>
         <li className='navbar-list'>
-          <span className='navbar-title'>Pathfinding Visualizer</span>
+          <span className='navbar-title'>
+            <span style={{ color: "cornflowerblue" }}>Pathfinding</span>{" "}
+            Visualizer
+          </span>
         </li>
         <li className='navbar-list'>
           <NavButton

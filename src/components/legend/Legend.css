@@ -22,14 +22,14 @@
 
 .start-icon {
   background-color: seagreen;
-  border-radius: 50%;
   border: 1px solid rgba(22, 22, 22, 0.3);
+  scale: 0.8;
 }
 
 .goal-icon {
   background-color: crimson;
-  border-radius: 50%;
   border: 1px solid rgba(22, 22, 22, 0.3);
+  scale: 0.8;
 }
 
 .wall-icon {
