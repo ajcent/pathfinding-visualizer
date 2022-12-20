@@ -100,14 +100,19 @@
 }
 
 @media all and (max-width: 420px) {
+  #guide-wrapper {
+    padding: 0 0.6rem;
+  }
+
+  #guide-wrapper li {
+    margin: 0.6rem;
+  }
+
   #guide-wrapper h5 {
     font-size: 1.1rem;
   }
 
-  #guide-wrapper h5 + p {
-    font-size: 0.9rem;
-  }
-
+  #guide-wrapper h5 + p,
   .guide-bullet,
   .guide-keyword,
   .guide-definition {
@@ -115,6 +120,6 @@
   }
 
   .guide-button {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
