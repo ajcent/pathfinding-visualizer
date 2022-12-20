@@ -41,7 +41,6 @@ export default class Greedy extends Pathfinder {
 
       const neighbour = this.getNeighbour(current);
       neighbour.forEach((next) => {
-        prev[next] = current;
         if (visited[next]) return;
         if (g[next] === 0) prev[next] = current;
 
@@ -49,11 +48,13 @@ export default class Greedy extends Pathfinder {
         if (g[next] !== 0) {
           if (tempG < g[next]) {
             g[next] = tempG;
+            prev[next] = current;
           }
         } else {
           g[next] = tempG;
           openSet.push(next);
         }
+
         f[next] = this.heuristic(next);
       });
     }
