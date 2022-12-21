@@ -8,14 +8,7 @@ const normalizedValue = (value, size) => {
 const getDensity = (width, height, size) => {
   const row = normalizedValue(height, size);
   const col = normalizedValue(width, size);
-
-  const widthDiff = width / col,
-    heightDiff = height / row;
-
-  let increaseX = heightDiff - widthDiff >= 1.15 ? 2 : 0;
-  let increaseY = widthDiff - heightDiff >= 1.15 ? 2 : 0;
-
-  return { count: col * row, col: col + increaseX, row: row + increaseY };
+  return { count: col * row, col: col, row: row };
 };
 
 const getDimension = ({ scaleX, scaleY }) => {
