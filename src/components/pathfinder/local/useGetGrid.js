@@ -12,8 +12,8 @@ const getDensity = (width, height, size) => {
   const widthDiff = width / col,
     heightDiff = height / row;
 
-  let increaseX = heightDiff - widthDiff >= 2 ? 2 : 0;
-  let increaseY = widthDiff - heightDiff >= 2 ? 2 : 0;
+  let increaseX = heightDiff - widthDiff >= 1 ? 2 : 0;
+  let increaseY = widthDiff - heightDiff >= 1 ? 2 : 0;
 
   return { count: col * row, col: col + increaseX, row: row + increaseY };
 };
