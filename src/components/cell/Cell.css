@@ -24,6 +24,7 @@
   position: absolute;
   inset: 4px;
   margin: auto;
+  border-radius: 50%;
   border: 1px solid rgba(22, 22, 22, 0.3);
   z-index: 2;
   pointer-events: none;
