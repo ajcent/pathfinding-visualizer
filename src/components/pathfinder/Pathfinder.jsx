@@ -11,7 +11,7 @@ import Navbar from "components/navbar/Navbar";
 import Guide from "components/guide/Guide";
 
 const WINDOW_DIMENSION = {
-  size: 28,
+  size: 26,
   scaleX: 1,
   scaleY: 0.9,
 };
